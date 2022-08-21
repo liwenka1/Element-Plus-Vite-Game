@@ -15,3 +15,9 @@ npm run dev
 ```bash
 npm run build
 ```
+
+### Abouut
+
+```bash
+用于canvas的学习，制作简单的2D游戏
+```
