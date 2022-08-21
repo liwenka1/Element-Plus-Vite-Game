@@ -1,23 +1,16 @@
 <template>
-  <el-config-provider namespace="ep">
-    <BaseHeader />
-    <div style="display: flex">
-      <BaseSide />
-      <div>
-        <img alt="Vue logo" class="element-plus-logo" src="./assets/logo.png" />
-        <HelloWorld msg="Hello Vue 3.0 + Element Plus + Vite" />
-      </div>
-    </div>
-  </el-config-provider>
+    <el-container>
+        <el-header style="padding:0px">
+            <Top></Top>
+        </el-header>
+        <el-main>
+            <Main></Main>
+        </el-main>
+    </el-container>
 </template>
 
-<style>
-#app {
-  text-align: center;
-  color: var(--ep-text-color-primary);
-}
+<script setup>
+import {} from 'vue'
+</script>
 
-.element-plus-logo {
-  width: 50%;
-}
-</style>
+<style></style>
