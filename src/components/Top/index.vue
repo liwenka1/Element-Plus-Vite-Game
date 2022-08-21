@@ -6,24 +6,29 @@
         :ellipsis="false"
         @select="handleSelect"
     >
-        <el-menu-item index="1">first</el-menu-item>
-        <el-menu-item index="2">second</el-menu-item>
-        <el-menu-item index="3">third</el-menu-item>
-        <el-menu-item index="4">fourth</el-menu-item>
-        <el-menu-item index="8">fifth</el-menu-item>
-        <el-menu-item index="6">sixth</el-menu-item>
-        <el-menu-item index="7">seventh</el-menu-item>
-        <el-menu-item index="8">eighth</el-menu-item>
-        <el-menu-item index="9">ninth</el-menu-item>
+        <el-menu-item index="/home">home</el-menu-item>
+        <el-menu-item index="/firstGame">first</el-menu-item>
+        <el-menu-item index="/secondGame">second</el-menu-item>
+        <el-menu-item index="/thirdGame">third</el-menu-item>
+        <el-menu-item index="/fourthGame">fourth</el-menu-item>
+        <el-menu-item index="/fifthGame">fifth</el-menu-item>
+        <el-menu-item index="/sixthGame">sixth</el-menu-item>
+        <el-menu-item index="/seventhGame">seventh</el-menu-item>
+        <el-menu-item index="/eighthGame">eighth</el-menu-item>
+        <el-menu-item index="/ninthGame">ninth</el-menu-item>
     </el-menu>
 </template>
 
 <script lang="ts" setup>
 import { ref } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 
-const activeIndex = ref('1')
+const activeIndex = ref('0')
+const route = useRoute()
+const router = useRouter()
 const handleSelect = (key: string, keyPath: string[]) => {
     console.log(key, keyPath)
+    router.push(key)
 }
 </script>
 

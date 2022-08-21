@@ -1,4 +1,4 @@
-<template>number one</template>
+<template>firstGame</template>
 
 <script lang="ts" setup>
 import {} from 'vue'
